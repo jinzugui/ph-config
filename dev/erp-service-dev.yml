@@ -14,6 +14,7 @@ spring:
     publisher-confirms: true
     virtual-host: /
 
+
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
