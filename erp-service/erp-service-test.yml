@@ -1,0 +1,32 @@
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8001/eureka/
+#      defaultZone: http://152.136.115.25:8001/eureka/
+  instance: # 通过ip加端口号注册到注册中心
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://118.178.139.190:8072/css-test?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: Initial0
+
+  application:
+    name: erp-service
+
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true
+    virtual-host: /
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:/mapper/erp/*.xml

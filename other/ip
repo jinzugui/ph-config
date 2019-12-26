@@ -1,0 +1,9 @@
+eureka-server: 8001
+zuul-server: 8011
+config-server: 8051
+
+
+erp-service: 8021
+report-service: 8031
+order-service: 8041
+user-service: 8061
