@@ -4,7 +4,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://118.178.139.190:8072/css-test?useUnicode=true&characterEncoding=utf-8
     username: root
-    password: Initial0
+    password: Initial
 
   rabbitmq:
     host: 127.0.0.1
