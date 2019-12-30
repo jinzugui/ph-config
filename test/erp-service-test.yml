@@ -1,12 +1,4 @@
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://172.21.0.7:8001/eureka/
-      # 通过ip加端口号注册到注册中心
-  instance: 
-    prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
 # DataSource Config
 spring:
   datasource:
@@ -14,9 +6,6 @@ spring:
     url: jdbc:mysql://118.178.139.190:8072/css-test?useUnicode=true&characterEncoding=utf-8
     username: root
     password: Initial0
-
-  application:
-    name: erp-service
 
   rabbitmq:
     host: 172.21.0.7
@@ -30,3 +19,5 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   mapper-locations: classpath*:/mapper/erp/*.xml
+  
+testConfig: testConfig
