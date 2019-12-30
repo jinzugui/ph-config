@@ -2,9 +2,9 @@
 eureka:
   client:
     serviceUrl:
-#       defaultZone: http://localhost:8001/eureka/
       defaultZone: http://172.21.0.7:8001/eureka/
-  instance: # 通过ip加端口号注册到注册中心
+      # 通过ip加端口号注册到注册中心
+  instance: 
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${server.port}
 # DataSource Config
