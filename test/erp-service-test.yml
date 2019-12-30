@@ -21,8 +21,8 @@ spring:
   rabbitmq:
     host: 172.21.0.7
     port: 5672
-    username: admin
-    password: admin
+    username: guest
+    password: guest
     publisher-confirms: true
     virtual-host: /
 
